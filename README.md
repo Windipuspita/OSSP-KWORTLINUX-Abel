@@ -6,4 +6,4 @@ Moreover, performing the installation in a virtual environment using VMware adde
 
 
 ## b. System Call  
-I created a C program using the `execv()` system call to replace the current process image with a new one (`/bin/ls`). This helped me understand how process execution works at the system level and how the Linux kernel loads and runs programs.
+I created a C program using the execv() system call to replace the current process image with a new one (/bin/ls). This helped me understand how process execution works at the system level and how the Linux kernel loads and runs programs. The exec() system call replaces the currently running process with a new process — in this case, the ls command. My program successfully demonstrated this behavior by displaying the contents of the current directory and exiting immediately, without returning to the original program logic.
