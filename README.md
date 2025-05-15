@@ -1,7 +1,9 @@
 # OSSP-KWORTLINUX-Abel
 
-## a. OS Installation
-Installed KWORT Linux using VMware. Partitioned the disk, mounted the filesystem, and configured bootloader manually. Fixed issues like GRUB directory errors and command typos to complete installation successfully.
+## a. OS Installation  
+This project focuses on installing and configuring KWORT LINUX — a lightweight, fast, and minimalist Linux distribution. The motivation behind choosing KWORT LINUX is its simplicity and transparency, which exposed me directly to core system components such as file systems, bootloaders, and run levels without abstraction. Unlike more automated operating systems (e.g., Ubuntu or Windows), KWORT requires manual configuration, making it ideal for an educational environment where hands-on learning is emphasized.
+Moreover, performing the installation in a virtual environment using VMware added value by teaching me about virtualization technologies, which are essential in today’s cloud-based and DevOps-driven world. Virtual machines provided a safe and flexible way to test operating systems without affecting the host system, allowing me to experiment, troubleshoot, and understand low-level processes without risk.
 
-## b. System Call
-Created a simple C program that uses the `execv()` system call to run the `ls -l` command. The program replaces its process image with `/bin/ls`, demonstrating low-level process control in Linux.
+
+## b. System Call  
+I created a C program using the `execv()` system call to replace the current process image with a new one (`/bin/ls`). This helped me understand how process execution works at the system level and how the Linux kernel loads and runs programs.
